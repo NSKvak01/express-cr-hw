@@ -19,4 +19,4 @@ app.use("/api/todo", todoRouter)
 //     console.log(`Server is running on PORT: ${3000}`);
 // })
 
-module.export = app
+module.exports = app
