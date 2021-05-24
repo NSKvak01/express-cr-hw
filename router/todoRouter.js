@@ -39,7 +39,7 @@ router.get('/get-todos-by-done/:done', function (req,res){
 
 router.post('/create-new-todo', function(req, res){
     if(!req.body.done){
-        let newTodo={"id":req.body.id, "todo":req.body.todo}
+        let newTodo={"id ":uuidv4(), "todo":req.body.todo}
         todos.push(newTodo)
     }
     res.json(todos)
